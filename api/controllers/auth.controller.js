@@ -9,3 +9,5 @@ export const signup = async (req,res)=>{
    await newUser.save();
    res.status(201).json("User created successfully");
 };
+
+//hashing password and creating a new user using the User model
